@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome Completo*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Endereço</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="text" name="tell" id="tell">
+                    </div>
+                    <div>
+                        <label>Altura(cm)</label>
+                        <input type="text" name="altura" id="altura">
+                    </div>
+                    <div>
+                        <label>Peso(kg)</label>
+                        <input type="text" name="peso" id="peso">
+                    </div>
+                    <div>
+                        <label>Problemas de Saúde</label>
+                        <input type="text" name="saude" id="saude">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nome Completo</th>
+                            <th>Endereço</th>
+                            <th>Telefone</th>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Problemas de saude</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
